@@ -1,5 +1,7 @@
 /* Just like unix wc */
-/* To compile: gcc -static fb1-1-wc.cpp -lfl -o wc.bin
+/* To compile:
+   flex -o fb1-1-wc.cpp fb1-1-wc.l 
+   gcc -static fb1-1-wc.cpp -lfl -o wc.bin
    Does not compile without -static. See https://github.com/colinaaa/cs143/issues/1 for rationale.
 */
 
