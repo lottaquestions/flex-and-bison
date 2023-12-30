@@ -15,6 +15,9 @@
 "*"    { return MUL; }
 "/"    { return DIV; }
 "|"    { return ABS; }
+"("    { return OP; }
+")"    { return CP; }
+"//".* { /* Ignore comments */} 
 [0-9]+ { yylval = atoi(yytext); return NUMBER; }
 \n     { return EOL; }
 [ \t]  { /* Ignore whitespace */ }
